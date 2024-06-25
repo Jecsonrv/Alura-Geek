@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "id": "beb8",
+      "nombre": "Nintendo Switch",
+      "precio": "$ 300,00",
+      "imagen": "https://www.nintendo.com/eu/media/images/08_content_images/systems_5/nintendo_switch_3/nintendo_switch_oled/CI_NSwitch_main.jpg"
+    },
+    {
+      "id": "0ae8",
+      "nombre": "Xbox Series S",
+      "precio": "$ 300,00",
+      "imagen": "https://m.media-amazon.com/images/I/61wgsQ6bGtL._AC_UF1000,1000_QL80_.jpg"
+    },
+    {
+      "id": "90c4",
+      "nombre": "Play Station 5",
+      "precio": "$ 500,00",
+      "imagen": "https://movicenter.com.pa/wp-content/uploads/2023/03/61BF3G-d1SS.jpg"
+    }
+  ]
+}

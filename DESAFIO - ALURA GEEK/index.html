@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Alura Geek</title>
+    <link rel="icon" href="images/header.svg">
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/header.svg" alt="logo">
+        <h2>AluraGeek</h2>
+    </header>
+    <main class="main">
+        <section class="productos">
+            <h1>Mis productos:</h1>
+            <ul class="productos__container" data-lista>
+            </ul>
+        </section>
+
+        <section>
+            <form class="formulario" data-formulario>
+                <h2 class="formulario__titulo">Agregar productos:</h2>
+                <div class="formulario__campo">
+                    <input type="text" class="formulario__item" name="nombre" placeholder="Nombre..." id="nombre"
+                        required data-nombre>
+                </div>
+                <div class="formulario__campo">
+                    <input type="text" class="formulario__item" name="precio" placeholder="Precio..." id="precio"
+                        required data-precio>
+                </div>
+                <div class="formulario__campo">
+                    <input type="text" class="formulario__item" name="imagen" placeholder="Imagen..." id="imagen"
+                        required data-imagen>
+                </div>
+                <div class="formulario__campo--botones">
+                    <input class="formulario__enviar" type="submit" value="Enviar" data-enviar/>
+                    <input class="formulario__reset" type="reset" value="Limpiar" />
+                </div>
+
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__logo">
+            <img src="images/header.svg" alt="logo">
+            <h2>AluraGeek</h2>
+        </div>
+        <p class="footer__texto">Desarrollado por Jecson Romero <br>Alura Latam 2024</p>
+    </footer>
+
+    <script src="js/mostrarProductos.js" type="module"></script>
+    <script src="js/crearProducto.js" type="module"></script>
+    <script src="js/borrarProducto.js" type="module"></script>
+</body>
+
+</html>

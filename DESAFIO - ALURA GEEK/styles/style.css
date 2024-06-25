@@ -1,0 +1,205 @@
+:root{
+    --negro: #000000;
+    --colorPrincipal: #5300C8;
+    --colorSecundario: #03318C;
+    --fuentePrincipal: "Press Start 2P", system-ui;
+    --fuenteSecundaria: "IBM Plex Mono", monospace;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* Globales */
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+ul, ul, ol {
+    list-style: none;
+}
+
+::-webkit-input-placeholder {
+    color: var(--colorSecundario);
+  }
+
+/* Header & Footer */
+
+.header{
+    background-color: var(--colorPrincipal);
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 15px 0 black;
+}
+
+.footer__logo{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0 0 0;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--colorPrincipal);
+    box-shadow: 0 0 15px 0 black;
+}
+
+.footer p {
+    font-family: var(--fuenteSecundaria);
+    font-size: 20px;
+}
+
+
+/* Main */
+
+.main {
+    display: flex;
+    padding: 4rem;
+    gap: 7rem;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+.productos h1 {
+    text-transform: uppercase;
+}
+.productos__container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.producto__item{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 0 1rem;
+    border: 0.3rem solid black;
+    font-family: var(--fuenteSecundaria);
+    color: white;
+    text-align: start;
+    background-color: var(--colorPrincipal);
+    border-radius: 1rem;
+    box-shadow: -5px 6px 3.3px 0px rgba(0,0,0,0.25);
+    flex-basis: 25%;
+}
+
+.producto__imagen{
+    width: 233px;
+    height: 230px;
+}
+
+.producto-container--value{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icono__basurero{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+/* Main formulario */
+
+.formulario {
+    font-family: var(--fuenteSecundaria);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 0 4rem;
+}
+
+.formulario h2 {
+    font-family: var(--fuentePrincipal);
+}
+
+.formulario__item{
+    font-weight: bold;
+    padding: 1rem;
+    width: 100%;
+    border: 0.3rem solid;
+    border-color: var(--colorSecundario);
+    border-radius: 1.5rem;
+}
+
+.formulario__campo--botones{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.formulario__enviar,
+.formulario__reset {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.formulario__enviar{
+    color: white;
+    background-color: var(--colorSecundario);
+    border: var(--colorSecundario);
+    cursor: pointer;
+}
+
+.formulario__reset {
+    background-color: transparent;
+    color: var(--colorSecundario);
+    border-color: var(--colorSecundario);
+    cursor: pointer;
+}
+
+
+/* Responsive */
+@media (min-width: 768px){
+    h1 {
+        font-size: 2.4rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    .main {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 7rem;
+        margin-top: 2rem;
+    }
+
+    .productos__container{
+        flex-wrap: wrap;
+    }
+    
+
+}
